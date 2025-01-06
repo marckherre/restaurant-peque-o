@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:padding="12dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<!-- Botón para reducir la cantidad (-) -->
+<ImageButton
+    android:id="@+id/buttonDecrease"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_remove"
+    android:background="?attr/selectableItemBackground"
+    android:contentDescription="Disminuir cantidad"
+    app:tint="@color/iconTintColor"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"/>
+
+<!-- Texto de cantidad (Número) -->
+<TextView
+    android:id="@+id/textViewCantidad"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3"
+    android:textSize="16sp"
+    app:layout_constraintStart_toEndOf="@id/buttonDecrease"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"/>
+
+<!-- Botón para aumentar la cantidad (+) -->
+<ImageButton
+    android:id="@+id/buttonIncrease"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_add"
+    app:tint="@color/iconTintColor"
+    android:background="?attr/selectableItemBackground"
+    android:contentDescription="Aumentar cantidad"
+    app:layout_constraintStart_toEndOf="@id/textViewCantidad"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"/>
+
+<!-- Descripción del producto (Nombre del producto y detalles) -->
+<TextView
+    android:id="@+id/textViewProducto"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Coca-Cola de 2 litros"
+    android:textSize="16sp"
+    app:layout_constraintStart_toEndOf="@id/buttonIncrease"
+    app:layout_constraintEnd_toStartOf="@id/textViewPrecio"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"/>
+
+<!-- Precio del producto -->
+<TextView
+    android:id="@+id/textViewPrecio"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="S/.50"
+    android:textSize="16sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Color de fondo claro -->
+    <color name="background_light">#F3E5F5</color> <!-- Un lila claro suave, por ejemplo -->
+
+    <color name="colorPrimary">#6200EE</color> <!-- Color principal del botón -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Borde del botón -->
+    <color name="colorDisabled">#B0BEC5</color> <!-- Color para botón deshabilitado -->
+
+    <!-- Colores para Botón Secundario -->
+    <color name="colorSecondary">#B0BEC5</color>
+    <color name="colorSecondaryDark">#78909C</color>
+
+    <!-- Colores para Botón de Advertencia -->
+    <color name="colorWarning">#D32F2F</color> <!-- Rojo brillante -->
+    <color name="colorWarningDark">#B71C1C</color> <!-- Rojo oscuro -->
+
+    <!-- Color para el borde de las Cajas de Texto -->
+    <color name="colorStroke">#B0BEC5</color> <!-- Gris claro para borde -->
+
+    <!-- Color morado para los botones o fondos -->
+    <color name="purple_500">#9C27B0</color> <!-- Morado vibrante -->
+
+
+    <!-- Colores de las mesas -->
+    <color name="gray_medium">#616161</color>
+    <color name="tableFree">#9E9E9E</color>
+    <color name="estadoActivo">#388E3C</color>
+    <color name="tableOccupied">#E0F7E0</color>
+    <color name="mesaActiva">#48bb78</color>
+    <color name="iconTintColor">#00BCD4</color>
+
+    <!-- res/values/colors.xml -->
+    <color name="colorInfo">#2196F3</color>    <!-- Azul para informativos -->
+    <color name="colorError">#F44336</color>   <!-- Rojo para errores -->
+    <color name="colorConfirm">#4CAF50</color> <!-- Verde para confirmaciones -->
+
+    <color name="colorTabUnselected">#E0E0E0</color> <!-- Un gris claro para pestañas no seleccionadas -->
+    <color name="colorTabTextUnselected">#757575</color> <!-- Un color gris más oscuro para el texto -->
+
+
+</resources>

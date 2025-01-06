@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- RecyclerView para categorías -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <!-- RecyclerView para productos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProductos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="8dp" />
+
+    <!-- Botón para confirmar selección -->
+    <Button
+        android:id="@+id/btnConfirmarSeleccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Productos" />
+</LinearLayout>

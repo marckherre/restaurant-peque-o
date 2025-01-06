@@ -1,0 +1,19 @@
+<!-- res/layout/dialog_title.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/colorInfo"> <!-- Este color cambiará dinámicamente -->
+
+    <TextView
+        android:id="@+id/dialogTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título del Diálogo"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

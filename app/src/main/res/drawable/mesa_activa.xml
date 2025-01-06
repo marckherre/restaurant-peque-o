@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/tableOccupied" />
+    <stroke
+
+        android:width="2dp"
+        android:color="@color/mesaActiva">
+    </stroke>
+    <corners android:radius="8dp" /> <!-- Ajustar el radio para que coincida con el CardView -->
+</shape>

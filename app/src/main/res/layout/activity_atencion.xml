@@ -1,0 +1,84 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    > <!-- Añadimos padding general para darle espacio a los bordes -->
+
+    <!-- AppBar con Toolbar y TabLayout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Detalle de Orden"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:tabIndicatorColor="@color/tableFree"
+            app:tabSelectedTextColor="@android:color/black"
+            app:tabTextColor="@color/colorTabTextUnselected"
+            android:contentDescription="Pestañas de navegación: ordenados y añadiendo" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Contenedor principal con ViewPager2 y los botones -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <!-- ViewPager2 para cambiar entre las pestañas -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- LinearLayout con los dos botones en la parte inferior -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <!-- Botón "Agregar" -->
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Agregar"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/estadoActivo"
+        android:textColor="@android:color/white" />
+
+    <!-- Botón "Enviar" -->
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Enviar"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorWarning"
+        android:textColor="@android:color/white" />
+</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
